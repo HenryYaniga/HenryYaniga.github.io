@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Home</title>
+    <style>
+        .jumbotron img{
+            object-fit: cover;
+            border-radius: 14px;
+            border: 4px solid rgba(255, 255, 255, 0.25);
+        }
+        .jumbotron::after{
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 2px;
+        }
+        p{
+            font-size: large;
+        }
+        .card{
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        body{
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            background: linear-gradient(180deg, #f4f6f8, #eaeef3);
+        }
+        button, .btn{
+            background: #2563eb;
+            color: white;
+            border: none;   
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        button:hover, btn:hover{
+            background:#1e40af;
+            transform: translateY(-2px);
+        }
+        .fade-in{
+            animation: fade 2.0s ease forwards;
+        }
+        @keyframes fade{
+            from{
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipe.html">Recipe</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Learn More
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="hobby.html">Hobbies</a>
+                            <a class="dropdown-item" href="bucket.html">Bucket List</a>
+                            <a class="dropdown-item" href="school.html">School</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+        <div class="jumbotron fade-in"> 
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="henry.jpg" target="_blank" rel="noopener norefferer" class="img-thumbnail img-fluid" alt="Henry">
+                </div>
+                <div class="col-md-8">
+                                <h1 class="display-4">Henry Yaniga</h1>
+                     <hr class="my-4">
+                    <p class="lead">I am a student at<a href="https://lanetech.org/"> Lane Tech H.S College Prep.</a> I live in Lakeview, which is one of the numerous neighborhoods in <b>Chicago, Illinois.</b> I love to watch the Chicago Cubs, and play baseball for my travel team. I've played other sports such as Soccer, Flag Football, Basketball, Pickleball, and Table Tennis. Other than sports, I also love school and my academics.
+                    I used to live in River North in the dead heart of the city, where I went to Ogden Elementary. In 3rd grade, halfway through the year, we moved to Florida, where I was homeschooled, through the rest of 3rd and all of 4th. I was able to get a headstart in 5th grade, when we moved back to Chicago. From 5th to 6th I went to Hamilton Elementary and excelled in all my classes. Eventually, I ended up getting into Taft Freshman Academy, where I was able to take advanced courses for 2 years</p>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <h2 style="text-align: center;">Learn More</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card fade-in" style="width: 18rem;">
+                    <img src="hobby.jpeg" class="card-img-top img-thumbnail img-fluid" target="_blank" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hobbies</h5>
+                        <p class="card-text">Take a look at my interests my clicking below!</p>
+                        <a href="hobby.html" class="btn btn-primary">Go to Hobbies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-in" style="width: 18rem;">
+                    <img src="planes.jpeg" class="card-img-top img-thumbnail img-fluid" alt="plane">
+                    <div class="card-body">
+                        <h5 class="card-title">Bucket List</h5>
+                        <p class="card-text">Take a look at the places I want to travel to!</p>
+                        <a href="bucket.html" class="btn btn-primary">Go to Bucket List</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-in" style="width: 18rem;">
+                    <img src="school.png" class="card-img-top img-thumbnail img-fluid" alt="Skool">
+                    <div class="card-body">
+                        <h5 class="card-title">Lane Tech</h5>
+                        <p class="card-text">Take a look into Lane Tech!</p>
+                        <a href="school.html" class="btn btn-primary">Go to School</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
